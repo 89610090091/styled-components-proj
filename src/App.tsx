@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Copmonents + React
+      This is components
     </div>
   );
 }
