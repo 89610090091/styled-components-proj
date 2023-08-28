@@ -12,9 +12,9 @@ function App() {
 
       <Menu>
         <ul>
-          <li><a href="">menu item1</a></li>
-          <li><a href="">menu item2</a></li>
-          <li><a href="">menu item3</a></li>
+          <li><a href="#">menu item1</a></li>
+          <li><a href="#">menu item2</a></li>
+          <li><a href="#">menu item3</a></li>
         </ul>
       </Menu>
 
@@ -31,7 +31,7 @@ function App() {
 
 export default App;
 
-const Box = styled.div` // wrapper button
+const Box = styled.div` 
  height: 100vh;
  display: flex;
  justify-content: center;
@@ -45,7 +45,10 @@ const Box = styled.div` // wrapper button
 ${Link} {
   cursor: zoom-in;
 }
+ 
+@media screen and (max-width: 800px) {
+  flex-direction: column;
+}
 `
-
 
 
