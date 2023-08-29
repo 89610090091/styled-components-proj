@@ -9,7 +9,6 @@ import { Link } from './components/Link.styled';
 function App() {
   return (
     <div className="App">
-
       <Menu>
         <ul>
           <li><a href="#">menu item1</a></li>
@@ -19,8 +18,8 @@ function App() {
       </Menu>
 
       <Box>
-        <StyledBtn as={Link} href={'#'}>LinkComponent</StyledBtn>
-        <StyledBtn as='a' href={'#'}>Link</StyledBtn>
+        <StyledBtn as={Link} href={"#"}>LinkComponent</StyledBtn>
+        <StyledBtn as='a' href={"#"}>Link</StyledBtn>
         <StyledBtn>hello</StyledBtn>
         <SuperButton>SuperButton</SuperButton>
       </Box>
@@ -45,7 +44,7 @@ const Box = styled.div`
 ${Link} {
   cursor: zoom-in;
 }
- 
+
 @media screen and (max-width: 800px) {
   flex-direction: column;
 }
