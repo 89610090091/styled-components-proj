@@ -7,10 +7,10 @@ export const GlobalStyles = createGlobalStyle`
   *::after {  
     box-sizing: border-box;
     padding: 0;
-    
+  
   }
 
   body {
-    background-color: #464c58;
+    background-color: #f7e863;
   }
 `
