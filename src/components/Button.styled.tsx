@@ -29,7 +29,7 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
             
             ${props => props.primary && css<StyledBtnPropsType>`
                     background-color: ${props => props.color || '#fb3f78'};
-                    color: snow; 
+                    color: #a58484; 
             `}
 
 
