@@ -1,28 +1,47 @@
-import { styled } from 'styled-components';
-import { MyAnimation } from '../styled/animation/Animation';
+import { css, styled } from 'styled-components';
 
-export const StyledBtn = styled.button`
+type StyledBtnPropsType = {
+    fontSize?: string
+    color?: string
+    primary: boolean
+    outlined: boolean
+}
+
+
+export const StyledBtn = styled.button<StyledBtnPropsType>`
            border: none;
-           background-color: #fb3f78;
+           border-radius: 10px;
+           /* background-color: #fb3f78; */
+           /* background-color: ${props => props.color || '#fb3f78'}; */
            padding: 10px 20px;
-           border-radius: 5px;
-           color: #fdfaff;
-           font-size: 2rem;
+           /* color: #fdfaff; */
+           font-size: ${props => props.fontSize};
            font-weight: bold;
+           
            &:hover {
-             background-color: #4053cc;
-           }
-         
-           &:last-child {
-             background-color: green;
-           }
-`
+               background-color: #0015ff;
+            }
 
-export const SuperButton = styled(StyledBtn)`
-  border-radius: 5px;
-  color: #747476;
-  background-color: yellow;
-  animation: ${MyAnimation} 2s ease-in-out;
+            ${props => props.outlined && css<StyledBtnPropsType>`
+                    border: 2px solid ${props => props.color || '#fb3f78'};
+                    color: ${props => props.color || '#fb3f78'};
+                    background-color: transparent;
+            
+            ${props => props.primary && css<StyledBtnPropsType>`
+                    background-color: ${props => props.color || '#fb3f78'};
+                    color: snow; 
+            `}
+
+
+                                                                                
+            // outline / example 
+            /* border: 2px solid ${props => props.color || '#fb3f78'};
+            color: ${props => props.color || '#fb3f78'};
+            background-color: transparent; */
+
+            // primety / example
+            /* background-color: ${props => props.color || '#fb3f78'};
+            color: snow; */
 `
 
 
