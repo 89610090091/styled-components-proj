@@ -3,6 +3,7 @@ import { css, styled } from 'styled-components';
 type StyledBtnPropsType = {
         fontSize?: string
         color?: string
+        // btntype: 'primary' | 'outlined'
         primary?: boolean
         outlined?: boolean
 }
