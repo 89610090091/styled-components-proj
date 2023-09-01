@@ -10,6 +10,8 @@ function App() {
       <Box>
         {/* <StyledBtn color={'green'} fontSize={'20px'}>hello</StyledBtn>
         <StyledBtn color={'red'} fontSize={'50px'}>hello</StyledBtn> */}
+        {/* <StyledBtn fontSize={'50px'}>hello</StyledBtn> */}
+
         <StyledBtn primary>hello</StyledBtn>
         <StyledBtn outlined>hello</StyledBtn>
       </Box>
