@@ -5,7 +5,7 @@ type StyledBtnPropsType = {
         color?: string
         primary?: boolean
         outlined?: boolean
-}  
+}
 
 
 export const StyledBtn = styled.button<StyledBtnPropsType>`
@@ -16,22 +16,29 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
            padding: 10px 20px;
            /* color: #fdfaff;f */
            /* font-size: 2rem; */
-           font-size: ${props => props.fontSize};
+           font-size: ${props => props.fontSize || '2rem'};
            font-weight: bold;
            
            &:hover {
-               background-color: #0015ff;
+               background-color: #4053cc;
             }
-
 
             ${props => props.outlined && css<StyledBtnPropsType>`
                         border: 2px solid ${props => props.color || '#fb3f78'};
                         color: ${props => props.color || '#fb3f78'};
                         background-color: transparent;
+
+                        &:hover {
+                                border-color: #ffee00;
+                                color: #4053cc;>
+                                background-color: #13cd10;
+
+            }
                 `}
 
-            ${props => props.outlined && css<StyledBtnPropsType>`
+            ${props => props.primary && css<StyledBtnPropsType>`
                         background-color: ${props => props.color || '#fb3f78'};
-                        color: color: #a58484;
+                        color: snow;
                 `}
+
                 `
