@@ -3,6 +3,7 @@ import './App.css';
 import { styled } from 'styled-components';
 import { StyledBtn } from './components/Button.styled';
 import { myTheme } from './styled/Theme.styled';
+import { Link } from './components/Link.styled';
 
 
 function App() {
@@ -35,7 +36,11 @@ const Box = styled.div`
    cursor: pointer;
  }
 
-@media screen and (max-width: 800px) {
+ ${Link} {
+  cursor: pointer;
+ }
+
+@media ${myTheme.media.tablet} {
   flex-direction: column;
 }
 `
