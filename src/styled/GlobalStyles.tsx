@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { myTheme } from "./Theme.styled";
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -7,5 +8,9 @@ export const GlobalStyles = createGlobalStyle`
   *::after {  
     box-sizing: border-box;
     padding: 0;
+  }
+
+  body {
+    background-color: ${myTheme.colors.primary};
   }
 `

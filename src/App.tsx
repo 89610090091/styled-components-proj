@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { styled } from 'styled-components';
 import { StyledBtn } from './components/Button.styled';
+import { myTheme } from './styled/Theme.styled';
 
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
         <StyledBtn color={'red'} fontSize={'50px'}>hello</StyledBtn> */}
         {/* <StyledBtn fontSize={'50px'}>hello</StyledBtn> */}
 
-        <StyledBtn primary>hello</StyledBtn>
-        <StyledBtn outlined>hello</StyledBtn>
+        <StyledBtn color={myTheme.colors.primary} btnType={'primary'} active>hello</StyledBtn>
+        <StyledBtn color={myTheme.colors.secondary} btnType={'outlined'}>hello</StyledBtn>
         {/* <StyledBtn btnType={'primary'}>hello</StyledBtn>
         <StyledBtn btnType={'outlined'}>hello</StyledBtn> */}
       </Box>

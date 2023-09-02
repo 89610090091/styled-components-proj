@@ -3,9 +3,10 @@ import { css, styled } from 'styled-components';
 type StyledBtnPropsType = {
         fontSize?: string
         color?: string
-        // btntype: 'primary' | 'outlined'
-        primary?: boolean
-        outlined?: boolean
+        btnType: 'primary' | 'outlined'
+        active?: boolean
+        // primary?: boolean
+        // outlined?: boolean
 }
 
 
@@ -20,11 +21,8 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
            font-size: ${props => props.fontSize || '2rem'};
            font-weight: bold;
            
-           &:hover {
-               background-color: #4053cc;
-            }
 
-            ${props => props.outlined && css<StyledBtnPropsType>`
+            ${props => props.btnType === 'outlined' && css<StyledBtnPropsType>`
                         border: 2px solid ${props => props.color || '#fb3f78'};
                         color: ${props => props.color || '#fb3f78'};
                         background-color: transparent;
@@ -34,12 +32,20 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
                                 color: #4053cc;>
                                 background-color: #13cd10;
 
-            }
-                `}
+                        }
+                     `}
 
-            ${props => props.primary && css<StyledBtnPropsType>`
+            ${props => props.btnType === 'primary' && css<StyledBtnPropsType>`
                         background-color: ${props => props.color || '#fb3f78'};
                         color: snow;
-                `}
+                     `}
 
-                `
+                     &:hover {
+                     background-color: #4053cc;
+                     }
+
+
+                      ${props => props.active && css<StyledBtnPropsType>`
+                      box-shadow: 5px 5px 5px 	#391ec5;
+                      `}
+                      `
