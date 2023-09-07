@@ -17,7 +17,6 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
            /* background-color: ${props => props.color || '#fb3f78'}; */
            padding: 10px 20px;
            /* color: #fdfaff;f */
-           /* font-size: 2rem; */
            font-size: ${props => props.fontSize || '2rem'};
            font-weight: bold;
            
@@ -37,7 +36,12 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
 
             ${props => props.btnType === 'primary' && css<StyledBtnPropsType>`
                         background-color: ${props => props.color || '#fb3f78'};
-                        color: snow;
+                        color: yellow;
+                     `}
+
+            ${props => props.btnType === 'outlined' && css<StyledBtnPropsType>`
+                        background-color: ${props => props.color || '#fb3f78'};
+                        color: yellow;
                      `}
 
                      &:hover {

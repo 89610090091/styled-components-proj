@@ -14,8 +14,8 @@ function App() {
         <StyledBtn color={'red'} fontSize={'50px'}>hello</StyledBtn> */}
         {/* <StyledBtn fontSize={'50px'}>hello</StyledBtn> */}
 
-        <StyledBtn color={myTheme.colors.primary} btnType={'primary'} active>hello</StyledBtn>
-        <StyledBtn color={myTheme.colors.secondary} btnType={'outlined'}>hello</StyledBtn>
+        <StyledBtn color={myTheme.colors.primary} btnType={'primary'} active>hello1</StyledBtn>
+        <StyledBtn color={myTheme.colors.secondary} btnType={'outlined'}>hello2</StyledBtn>
         {/* <StyledBtn btnType={'primary'}>hello</StyledBtn>
         <StyledBtn btnType={'outlined'}>hello</StyledBtn> */}
       </Box>
