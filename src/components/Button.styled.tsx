@@ -46,6 +46,6 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
 
 
                       ${props => props.active && css<StyledBtnPropsType>`
-                      box-shadow: 5px 5px 5px 	#391ec5;
+                      box-shadow: 5px 5px 5px 	#a0d706;
                       `}
                       `

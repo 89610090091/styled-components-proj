@@ -1,6 +1,6 @@
 export const myTheme = {
     colors: {
-        primary: 'gold',
+        primary: 'blue',
         secondary: 'red',
         gray: {
             dark: '#393434',
